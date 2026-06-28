@@ -13,7 +13,7 @@ def send_telegram_message(message):
     requests.post(url, json=payload)
 
 def check_market():
-    exchange = ccxt.binance()
+    exchange = ccxt.mexc()
     coins = ['BTC/USDT', 'ETH/USDT', 'XRP/USDT']
     
     for coin in coins:
